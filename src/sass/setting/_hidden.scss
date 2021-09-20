@@ -1,0 +1,30 @@
+//デスクトップのみ表示
+.u-desktop {
+  display: none;
+  @include mq("lg") {
+    display: block;
+  }
+}
+
+.u-hidden-sp {
+	// スマホ時に非表示
+	display: none!important;
+
+	@include mq("tab"){
+		display: inherit!important;
+	}
+}
+
+//モバイルのみ表示
+.u-mobile {
+  @include mq("lg") {
+    display: none!important;
+  }
+}
+.u-hidden-pc {
+	// PC時に非表示
+
+	@include mq("tab") {
+		display: none!important;
+	}
+}

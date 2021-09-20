@@ -1,0 +1,112 @@
+
+.service__boxes{
+    @include mq(tab){
+       display: flex;
+       justify-content: space-between;
+     }
+}
+.service__box{
+    margin-bottom: rem(40);
+    @include mq(tab){
+       width: rem(350);
+       margin-bottom: rem(21);
+      }
+    .service__img{
+        width: 100%;
+        position: relative;
+        margin-bottom: rem(10);
+        @include mq(tab){
+            margin-bottom: rem(0);
+        }
+    }
+    .service__img img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        object-fit: cover;width: 100%;height: 100%;
+        object-position: center;
+
+        }
+        .service__img::before{
+            content: "";
+            padding-top: 62.68%;
+            display: block;
+
+        }
+        .service__title{
+            letter-spacing: -.05em;
+            font-size: rem(20);
+            text-align: center;
+            font-weight: bold;
+            font-family: $font-family; 
+            margin-bottom:  rem(4);
+            @include mq(tab){
+                margin-bottom:  rem(9);
+           
+            }
+        }
+        .service__desc{
+            @include mq(tab){
+             letter-spacing: 0;
+                font-size: rem(16);
+                margin-bottom: .3rem;
+            }
+        }
+      
+}
+.service__box:nth-of-type(2){
+    @include mq(tab){
+     margin: 0 rem(15);
+      }
+}
+.service__box:last-child{
+    width: 78%;
+    margin: 0 auto 0;
+}
+/*Service Page*/
+
+.top__box--service1{
+    .section__inner:last-child{
+        // padding-bottom: rem(80);
+        max-width:1110px!important ;
+    }
+@include mq(tab){
+        .service__boxes{
+       display: inherit;
+       flex-wrap: wrap;
+        }
+        .service__box{
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: rem(60);
+        }
+        .service__box:last-child{
+            margin-bottom: rem(110);
+        }
+        .service__title{
+            text-align: left;
+            font-size: rem(24);
+        }
+        .service__desc {
+            font-size: rem(15);
+            letter-spacing: .05em;
+            font-family: $font-family;
+            line-height: rem(27);
+        }
+        .service__img{
+            width: 40%;
+            margin-right: rem(50);
+            img{
+                width: 100%;
+            }
+        }
+        .service__inbox{
+            width: 54%;
+            display: initial!important;
+        }
+    }
+  
+}

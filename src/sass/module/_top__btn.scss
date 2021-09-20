@@ -1,0 +1,17 @@
+.top__btn{
+width: rem(200);
+height: rem(60);
+line-height: rem(60);
+font-size: rem(15);
+color: #fff;
+font-weight: bold;
+background: linear-gradient(#7633a4 0%, #250d65 100%);
+text-align: center;
+border-radius: rem(50);
+margin: 0 auto;
+font-family: "Montserrat", sans-serif;
+@include mq("tab"){
+font-size: 0.8375rem;
+letter-spacing: 0.0804em;
+}
+}

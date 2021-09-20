@@ -1,0 +1,23 @@
+@import "inner";
+
+//ブレイクポイント
+$breakpoints: (
+	"sp": "screen and (min-width: 375px)",
+	"tab": "screen and (min-width: #{$tab})",
+	"pc": "screen and (min-width: #{$inner})",
+	"lg": "screen and (min-width: #{$pc})",
+
+);
+
+// メディアクエリー
+$mediaquerys: (
+  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+  md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+);
+@mixin pc{
+	@media screen and (min-width: $tab){
+@content;
+	}
+}

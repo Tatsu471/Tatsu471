@@ -1,0 +1,18 @@
+
+
+/* FontFamily */
+$font-family-base:"Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo",sans-serif;// ベースフォント
+$font-family: 'Montserrat', sans-serif;
+$second-font-family: "";
+$font-size-base: 16px; // ベースフォントサイズ
+$font-weight-base: 400; // ベースフォントウェイト
+$lh: 1.6; // ベース行間
+
+body {
+  font-family: $font-family-base;
+}
+
+/* font-weight */
+$regular: 300;
+$normal: 400;
+$bold: 700;

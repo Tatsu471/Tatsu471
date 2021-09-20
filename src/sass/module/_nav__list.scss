@@ -1,0 +1,122 @@
+
+
+
+
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    @include mq(tab){
+        justify-content: flex-end;
+        display: flex!important;
+        flex-wrap: nowrap;
+    }
+}
+.nav__item{
+    font-size: rem(12);
+    color: #fff;
+    margin-right:  rem(25);
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    font-family: $font-family;
+
+    @include mq(tab){
+        font-size: rem(15);
+        height: inherit;
+    }
+}
+.nav__item:last-child{
+    padding-right: rem(30);
+    margin: 0;
+}
+.nav__link{
+    text-decoration: none;
+}
+.nav__link-text{
+  
+    position: relative;
+    z-index: 1;
+}
+
+.nav__link-text::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: rem(-6);/*テキストからの距離*/
+    width: 0%;/*初期状態では下線非表示*/
+    height: rem(1);/*下線の高さ*/
+    background: #fff;/*下線の色*/
+    z-index: -1;
+    transition: all 0.4s;/*アニメーション速度*/
+}
+  .nav__link:hover .nav__link-text::after{
+   width: 100%;
+  }
+  
+  /*SP ハンバーガーメニュー
+
+*/
+
+.header-list__wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    transition: all 0.5s;/*アニメーション設定*/
+    background:url("../../../assets/img/top/sp/bg/sp_menu_bg.png")center center no-repeat;
+    background-size: cover;
+
+.nav__list{
+    padding: 36vh rem(100);
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 91.5vh;
+    align-items: center;
+    right: 0;
+ 
+}
+
+.nav__item{
+    // border-bottom: solid 1px #ffffff;
+    list-style: none;
+    width: 100%;
+    margin: rem(0) 0;
+    margin-bottom: .9rem;
+    letter-spacing: .1em;
+    @include mq(tab){
+        width: 100%;
+        margin: rem(0) 0;
+    }
+}
+.nav__link{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding:  0;
+    position: relative;
+}
+.nav__item:last-child {
+    padding-right: 0;
+    margin: rem(0) 0;
+}
+// .nav__link::before{
+//     content: "";
+//     width: 7px;
+//     height: 7px;
+//     border-top: solid 2px #ffffff;
+//     border-right: solid 2px #ffffff;
+//     transform: rotate(45deg);
+//     position: absolute;
+//     right: 11px;
+//     top: 16px;
+// }
+}
+
+.open .header-list__wrapper{
+    left: 0;/*メニューを画面内へ*/
+}

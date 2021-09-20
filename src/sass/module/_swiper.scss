@@ -1,0 +1,56 @@
+
+.swiper-container{
+    // position: absolute;
+    // top:0;
+    padding-bottom: rem(17);
+    margin: 0;
+    z-index: 999;
+    @include mq(tab){
+        max-width: rem(750);
+        max-height: rem(510);
+      
+    }
+   
+}
+.swiper-pagination{
+text-align: right;
+bottom: rem(0)!important;
+left: 2px;
+}
+.swiper-slide{
+    @include mq(tab){
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        // bottom: 0;
+        // left: 0;
+      
+    &::after{
+        // content: "";
+        // display: block;
+        // padding-top: 100%; /* 比率を指定 */
+    }
+    }
+}
+.swiper{
+    transform: translateY(5.4rem);
+    width: 90%;
+    @include mq(tab){
+        position: absolute;
+        margin: 0;
+        -webkit-transform: translateY(3.9375rem);
+        transform: translateY(3.9375rem);
+        width: 59.5%;
+        padding-bottom: 27px;
+   
+   }
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+
+.swiper-pagination-bullet-active{
+    background: $main-color;
+}

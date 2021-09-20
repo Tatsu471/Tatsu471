@@ -1,0 +1,12 @@
+.pointer__page{
+    position: fixed;
+    bottom: rem(45);
+    right: rem(52);
+    width: rem(30);
+    height: rem(30);
+    z-index: 999;
+    @include mq(tab){
+        width: rem(50);
+        height: rem(50);
+    }
+}

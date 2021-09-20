@@ -1,0 +1,14 @@
+.header-scroll {
+  position: absolute;
+  top: 90%;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-family: "Montserrat",sans-serif;
+}
+
+.header-scroll::after {
+  content: "";
+  height: 1px;
+  background-color: #fff;
+}

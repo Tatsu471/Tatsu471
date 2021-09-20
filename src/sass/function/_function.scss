@@ -1,0 +1,12 @@
+@import "../setting/_breakpoints";
+
+@mixin mq($breakpoint: tab) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+@function vw($window_width, $size) {
+	@return $size / $window_width * 100vw;
+}

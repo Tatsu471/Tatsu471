@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "test"
+AuthUserFile "/home/asoford/utoria-blog.com/public_html/test/.htpasswd"
+require valid-user

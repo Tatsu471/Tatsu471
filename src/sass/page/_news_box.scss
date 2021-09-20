@@ -1,0 +1,86 @@
+
+.news__boxes{
+    @include mq("tab"){
+    transform: translateY(-10px);
+}
+}
+.news__box{
+    color: #333;
+    font-family: $font-family;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    @include mq("tab"){
+        margin-bottom: rem(5);
+        
+    }
+    .news__date{
+        font-size: rem(15);
+        letter-spacing: .1em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .news__title{
+        font-size: rem(14);
+        letter-spacing: .05em;
+        font-family: $font-family-base;
+        line-height: 2em;
+        margin-bottom: rem(24);
+        width: 100%;
+        @include mq(tab){
+            display: inline-block;
+            margin-bottom: 0;
+            font-size: rem(15);
+            
+        }
+    }
+    .news__title:nth-of-type(2){
+  
+        margin-bottom: rem(28.8);
+        @include mq(tab){
+            display: inline-block;
+            margin-bottom: 0;
+            
+        }
+    }
+}
+.news__tag{
+    letter-spacing: .05em;
+    vertical-align: middle;
+    font-size: rem(11);
+    background: #E8E8E8;
+    min-width: 82px;
+    width: 5.125rem;
+    height: rem(20);
+    line-height: rem(20);
+    display: inline-block;
+    border-radius: 5rem;
+    text-align: center;
+    margin-left: rem(15);
+    font-weight: bold;
+    @include mq(tab){
+        margin: 0 rem(18);
+        font-size: rem(12);
+        
+    }
+}
+.top__box--news1 .news__boxes{
+    margin-top: .5rem;
+}
+.top__box--news1 .news__box{
+   flex-wrap: wrap;
+}
+.top__box--news1 .news__title{
+    width: 100%;
+    margin-bottom: rem(24);
+    line-height: 1.8em;
+    @include mq(tab){
+        margin-bottom: rem(24);
+    }
+}
+.top__box--news1 .news__title:last-of-type{
+    margin-bottom: rem(40);
+}

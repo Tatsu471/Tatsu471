@@ -1,0 +1,114 @@
+.top__box--company1{
+   margin-bottom: 0!important;
+    @include mq(tab){
+        padding-top: 0!important;
+        .top__box--company1__inner{
+        display: block!important;
+        }
+  
+    }
+
+}
+.company__humanbox{
+    margin-bottom: rem(80);
+    .company__img{
+       margin-right: 0;
+       margin-bottom: rem(30);
+    }
+    .company__desc{
+        margin-bottom: 2em;
+    }
+    .company__humanbox__title{
+        font-size: rem(24);
+        margin-bottom: rem(50);
+    }
+    @include mq(tab){
+        margin-bottom: rem(140);
+    .company__box{
+        display: flex;
+        justify-content: center;
+
+    }
+    .company__img{
+        width: 30.9%;
+        margin-right: 5%;
+    }
+    .company__descs{
+        width: 50%;
+        font-size: rem(14);
+    }
+   
+}
+}
+.top__box--company2{
+    margin-bottom: rem(0);
+    .company-info__box{
+        margin-bottom: rem(40);
+        border: none;
+    }
+    .company-info__box tr{
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #ccc;
+    }
+    .company-info__box th,
+    .company-info__box td {
+    border: none;
+    width: 100%;
+    padding: 0;
+    }
+    .company-info__box th{
+        margin-top: rem(20) ;
+    }
+    .company-info__box td{
+        margin-bottom: rem(20) ;
+    }
+    iframe{
+        height: 240px;
+        max-height: 394px;
+  
+   
+    }
+    a{
+        margin-bottom: rem(60);
+        font-family: $font-family;
+        display: inline-block;
+    }
+    @include mq(tab){
+        margin-bottom: rem(60);
+      
+        .company-info__box {
+          
+            width: 100%;
+            margin-bottom: rem(60);
+            }
+            .company-info__box tr{
+                border-bottom: 1px solid #ccc;
+            }
+
+            .company-info__box th{
+                width: 18%;
+            }
+            .company-info__box th,
+            .company-info__box td {
+                border: none;
+                font-size:rem(15) ;
+                padding: rem(30) 0;
+            }
+            
+            .company-info__box th {
+            font-weight: bold;
+             
+            }
+            .company__humanbox__title{
+                margin-bottom: rem(60);
+            }
+            iframe{
+                height: 394px;
+                max-height: 394px;
+          
+           
+            }
+          
+    }
+}

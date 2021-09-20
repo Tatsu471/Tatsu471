@@ -1,0 +1,52 @@
+.hamburger{
+    z-index:9999;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .5s;
+    width: 14%;
+    padding-top: 1.4rem;
+    box-sizing: border-box;
+   }
+   
+   .hamburger span{
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #fff;
+    -webkit-transition: ease .5s;
+    transition: ease .5s;
+   }
+   
+   .hamburger span:nth-child(1) {
+    top: 0;
+   }
+   
+   .hamburger span:nth-child(2) {
+    margin: 5px 0;
+   }
+   
+   .hamburger span:nth-child(3) {
+    top: 0;
+    bottom: auto;
+    margin-top: 3px;
+   }
+   /*OPEN時の動き*/
+    .open .hamburger span:nth-child(1) {
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+   }
+   
+    .open .hamburger span:nth-child(2) {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+   }
+   
+    .open .hamburger span:nth-child(3) {
+    top: -11px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+   }

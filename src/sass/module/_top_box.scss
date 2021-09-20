@@ -1,0 +1,175 @@
+.top__box--0{
+
+  padding-top: rem(110);
+    margin-bottom: rem(40);
+    position: relative;
+   padding-bottom: rem(53);
+   position: relative;
+   @include mq(tab){
+    padding-top: rem(0);
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width:rem(1260);
+      margin-bottom: 0;
+   }
+}
+.top__box--0 .section__subtitle{
+    margin-bottom: 1.475rem;
+}
+.top__box--0 .section__subtitle{
+    margin-bottom: 1.475rem;
+}
+.top__box--0 .section__inner,.top__box--0 .section__inner--right{
+    @include mq(tab){
+        // max-width:66.4%;
+        // width: 100%;
+        // margin-left: auto;
+        // padding-left: rem(346);
+        padding-bottom: rem(224);
+        padding-top: rem(224);
+     }
+}
+.top__box--0.top__box1--bg{
+    @include mq(tab){
+    background: none!important;
+}
+}
+.top__box--1{
+    margin-top: rem(41.1);
+    margin-bottom: rem(75);
+    @include mq(tab){
+      
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width:rem(1260);
+    }
+    // .section__inner{
+    //     max-width:rem(1260);
+    //     width: 100%;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
+    
+}
+.top__box--1:nth-of-type(1){
+    margin-top: rem(-27);
+@include mq(tab){
+    margin-top: rem(-45);
+    margin-bottom: rem(134)!important;
+}
+}
+.top__box--1 .section__subtitle,.top__box--3 .section__subtitle{
+    margin-bottom: 1.675rem;
+}
+.top__box--1:nth-of-type(1) .section__inner{
+    @include mq(tab){
+        max-width: 57.3rem;
+        padding: 0 5px;
+        display: flex;
+        align-items: top;
+        
+
+    }
+}
+.top__box--1:nth-of-type(1) .section__title--inline{
+    @include mq(tab){
+    margin-right: rem(49);
+    }
+}
+
+.top__box--1.top__box2--bg{
+    background: url("../../../assets/img/top/sp/bg/sp_bg-circles.png") top center no-repeat;
+    background-size: contain;
+    padding-top: rem(33);
+    margin-bottom: rem(54);
+    @include mq(tab){
+        background: url("../../../assets/img/top/pc/bg/bg-circle.png") center right 45% no-repeat;        background-size: contain;
+
+        // background: url("../../../assets/img/top/pc/bg/bg-face.png") center center no-repeat;
+        background-size: contain;
+        padding-top: rem(128);
+        margin-top: rem(0)!important;
+        margin-bottom: rem(63)!important;
+        max-width: 81.75rem;
+   
+       
+    }
+     .section__inner{
+     padding-top: 1rem;
+        // background: url("../../../assets/img/top/pc/bg/bg-circle.png") center center no-repeat;
+        background-size: contain;
+        padding-bottom: rem(73);
+        padding-left: 0!important;
+        max-width: 100%;
+        padding-right: 0!important;
+        @include mq(tab){
+            background: url(../../../assets/img/top/pc/bg/bg-face.png) top 14% center no-repeat;    
+        }
+    }
+    .section__subtitle{
+        margin-bottom: rem(19);
+    }
+}
+/*service*/
+.top__box--1:nth-of-type(2){
+    margin-bottom: rem(1);
+    @include mq(tab){
+    margin-bottom: rem(137);
+    }
+}
+
+
+.top__box--2{
+    padding-bottom: rem(53);
+    margin-bottom: rem(80);
+    @include mq(tab){
+        max-width:rem(1110);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: rem(97);
+        padding-bottom: rem(0);
+     }
+}
+.top__box--3{
+    padding-top: rem(52);
+    padding-bottom: rem(52);
+    @include mq(tab){
+        padding-bottom: rem(76);
+        padding-top: rem(84);
+        .section__title{
+            letter-spacing: 0.005em;
+        }
+    }
+  .section__desc{
+    letter-spacing: .03em;
+  }
+}
+
+/*NEWS Page*/
+
+.top__box--news1:nth-of-type(1),.top__box--service1:nth-of-type(1){
+    margin:  rem(60) 0 0 0;
+    max-width: 100%;
+    .box__inner--1{
+        max-width: 89.6%;
+        padding: 0;
+        @include mq(tab){
+        max-width: 63.2%;
+        }
+    }
+    @include mq(tab){
+        margin:  rem(60) 0 0 0;
+    }
+    
+}
+.top__box--service1:nth-of-type(1){
+    @include mq(tab){
+        margin-bottom:   0!important;
+    }
+}
+.top__box--company1{
+    padding-top: 0important;
+}

@@ -1,0 +1,13 @@
+.display__flex{
+    display: flex!important;
+}
+.display__flex--jus{
+    display: flex!important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.display__flex--rv{
+flex-direction: row-reverse;
+align-items: center;
+display: flex!important;
+}

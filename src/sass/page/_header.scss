@@ -1,0 +1,51 @@
+.header{
+    width: 100vw;
+    height: 65px;
+    // position: fixed;
+    padding: 0 0 0 rem(15);
+    z-index: 999;
+    line-height: 65px;
+    @include mq("tab"){
+        padding: 0;
+
+        
+    }
+}
+.header__inner{
+    padding:  0;
+    // background-color:#21054D;
+    position: relative;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    @include mq("tab"){
+        padding:   0;
+      
+    }
+}
+.header__logo{
+    width: rem(125);
+    height: auto;
+  
+    @include mq("tab"){
+        width: rem(205);
+        padding-left: rem(30);
+    }
+}
+.header__menu{
+    // position: absolute;
+    // right: rem(22);
+    // top: rem(14);
+    height: inherit;
+    @include mq("tab"){
+        // top: rem(0);
+        position: inherit;
+        // right: 0;
+            width: 50%;
+
+
+        
+    }
+}

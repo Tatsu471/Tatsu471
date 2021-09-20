@@ -1,0 +1,11 @@
+
+.copyright{
+    text-align: center;
+    color: #A798B7;
+    font-size: rem(10);
+    letter-spacing: 0.05em;
+    padding-bottom: rem(20);
+    @include mq(tab){
+        padding-bottom: rem(60);
+    }
+}

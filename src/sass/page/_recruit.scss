@@ -1,0 +1,229 @@
+.recruit__img{
+    width: 100%;
+    position: relative;
+    margin-bottom: rem(60);
+    text-align: center;
+    @include mq(tab){
+            width: 100%;
+            margin-bottom: 0;
+            height: rem(360);
+        & + .l-inner{
+            width: 40%;
+            height: rem(340);
+            padding: rem(80) 0 0;
+        }
+    }
+}
+.recruit__img + .section__inner{
+    
+    @include mq(tab){
+        width: 40%;
+        padding-top: 1rem;
+    }
+}
+.recruit__img  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    object-fit: cover;width: 100%;height: 100%;
+    object-position: top;
+//    max-height: ;
+    }
+    .recruit__img::before{
+        content: "";
+        padding-top: 37%;
+        display: block;
+        @include mq(tab){
+            padding-top: rem(1067);
+        }
+    }
+main{
+    background: url("../../../assets/img/recruit/bg-recruit.png.png")center center;
+}
+    /*recruit Page*/
+
+    .top__box--recruit1{
+        margin-bottom: rem(40);
+        .top__box--recruit1__inner{
+        
+        }
+        .recruit-box__title{
+            font-size: rem(40);
+            line-height: rem(56);
+            margin-bottom: rem(20);
+            @include mq(tab){
+            font-size: rem(70);
+            margin-bottom: rem(40);
+            br{
+                display: none;
+            }
+            }
+        }
+        .recruit-box__subtitle{
+         
+            font-size: rem(18);
+            margin-bottom: rem(25);
+          
+            @include mq(tab){
+            font-size: rem(30);
+            margin-bottom: rem(40);
+            }
+
+        }
+        .recruit-box__desc{
+            font-size: rem(15);
+            margin-right: 0;
+            margin-left: 0;
+        }
+        & + .recruit__img{
+            margin-bottom: rem(40);
+            height: rem(290);          
+              @include mq(tab){
+                height: 72.5rem;
+            }
+        }
+    }
+    .top__box--recruit2{
+        margin-bottom: rem(80);
+        .recruit-info__title{
+            color: #333333;
+            font-size: rem(24);
+            font-family: $font-family;
+            text-align: center;
+            font-weight: bold;
+
+        }
+        .recruit-info{
+            background: #fff;
+        }
+      
+        .recruit-info__box{
+            margin-bottom: rem(40);
+            border: none;
+        }
+        .recruit-info__box tr{
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #ccc;
+        }
+        .recruit-info__box th,
+        .recruit-info__box td {
+        border: none;
+        margin: 0;
+        padding: 0;
+        }
+      
+   
+        .recruit__btn{
+            width: rem(200);
+            height: rem(60);
+            line-height: rem(60);
+            font-size: rem(15);
+            color: #fff;
+            font-weight: bold;
+            background: linear-gradient(#7633a4 0%, #250d65 100%);
+            text-align: center;
+            border-radius: rem(50);
+            margin: 0 auto;
+            font-family: "Montserrat", sans-serif;
+            &+ span{
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: rem(12);
+                font-family: "Montserrat", sans-serif;
+            }
+            @include mq("tab"){
+            font-size: 0.8375rem;
+            letter-spacing: 0.0804em;
+        }
+            }
+ 
+        a{
+            margin-bottom: rem(60);
+            font-family: $font-family;
+            display: inline-block;
+        }
+    
+        .recruit-info__box th{
+            width: 100%;
+            margin-bottom: rem(10);
+            margin-top: rem(20);
+        }
+        .recruit-info__box td{
+            margin-bottom: rem(15);
+            width: 100%;
+        }
+        .recruit-info__inner{
+            padding: rem(30) rem(20);
+        }
+        .recruit__humanbox__title{
+            font-size:rem(24) ;
+            margin-bottom: rem(20);
+        }
+        @include mq(tab){
+            margin-bottom: rem(60);
+            .recruit-info__inner{
+                padding: rem(60) rem(95);
+            }
+            .recruit-info__box {
+              
+                width: 100%;
+                margin-bottom: rem(60);
+                }
+                .recruit-info__box tr{
+                    border-bottom: 1px solid #ccc;
+                    align-items: baseline;
+                }
+    
+                .recruit-info__box th{
+                    width: 18%;
+                }
+                
+                .recruit-info__box td{
+                    width: 70%;
+                }
+               
+                .recruit-info__box th,
+                .recruit-info__box td {
+                    border: none;
+                    font-size:rem(15) ;
+                    padding: rem(30) 0;
+                    margin: 0;
+                }
+                
+                .recruit-info__box th {
+                font-weight: bold;
+                 
+                }
+                .recruit__humanbox__title{
+                    font-size:rem(32) ;
+                    margin-bottom: rem(60);
+                }
+         
+              
+        }
+    }
+    .top__box--recruit3{
+        margin-bottom: rem(60);
+        @include mq(tab){
+            margin-bottom: rem(110);
+        }
+        .recruit__humanbox__title{
+            margin-bottom: rem(40);
+            font-size: rem(24);
+            @include mq(tab){
+                font-size: rem(32);
+            }
+        }
+        .video{
+            height: rem(188);
+            width: 100%;
+            background: #EBEBEB;
+            @include mq(tab){
+            height: rem(620);
+           
+            }
+        }
+    }

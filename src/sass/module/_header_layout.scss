@@ -1,0 +1,19 @@
+html{
+    margin-top: 0!important;
+}
+
+
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    @include mq("tab"){
+      
+  }
+}
+
+.header_bg{
+  background: #21054D;
+  transition: 2s;
+}
